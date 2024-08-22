@@ -10,3 +10,8 @@ Checking if pppd is installed...OK
 Checking if iproute package is installed...OK
 Setup ./subproc
 ./waitppp.sh
+begin setup at ....
+Checking if pppd is installed...OK
+Checking if iproute package is installed...OK
+Setup ./subproc
+./waitppp.sh
