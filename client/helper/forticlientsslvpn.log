@@ -166,3 +166,133 @@ Strict-Transport-Security: max-age=31536000
 ----
 
 08/20/2024 14:10:55 [936761] pppd may die...trying to fix it
+08/22/2024 09:03:22 [269450] set the loglevel to 1
+08/22/2024 09:03:22 [269436] set the loglevel to 1
+08/22/2024 09:03:22 [269450] sslvpn connection version:4.0.2328
+08/22/2024 09:03:22 [269450] rcv cmd:0 at state[0]
+08/22/2024 09:03:22 [269450] starting ssl vpn tunnel[4.0.2328]
+08/22/2024 09:03:22 [269452] route backup START
+08/22/2024 09:03:22 [269452] route backup DONE
+08/22/2024 09:03:22 [269453] execl /home/cristopher/workspace/namchee/pw/./client/helper/get_fortisslvpn_info /home/cristopher/workspace/namchee/pw/./client/helper vwys1.fortiddns.com 10443   ...
+08/22/2024 09:03:22 [269453] trusted CA dir: /home/cristopher/.fctsslvpn_trustca
+08/22/2024 09:03:22 [269453] set loglevel to 1
+08/22/2024 09:03:23 [269453] Peer's certificate is not valid. action is 1
+08/22/2024 09:03:23 [269453] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number: 2379327 (0x244e3f)$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=fortinet-subca2001/emailAddress=support@fortinet.com$        Validity$            Not Before: Feb 23 02:07:56 2021 GMT$            Not After : Jan 19 03:14:07 2056 GMT$        Subject: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=FortiGate, CN=FG200FT921905275/emailAddress=support@fortinet.com$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (2048 bit)$                Modulus:$                    00:dd:f5:2a:48:2b:1b:5a:96:d4:4f:ea:e9:be:52:$                    3c:86:4e:6c:7c:b5:76:97:c4:42:05:22:1f:92:a1:$                    97:b5:c9:a3:b6:f6:00:b7:f4:c5:de:53:70:57:1c:$                    8e:2d:f4:95:8f:a4:7b:2b:30:7a:14:28:3d:0c:4d:$                    21:e4:d0:7e:d8:54:f0:bf:cd:0b:95:8d:39:5c:a2:$                    32:d1:32:72:3d:cd:45:71:b4:cd:f7:13:c8:88:3b:$                    98:5d:f2:89:23:ba:02:8e:e0:d3:8d:1d:a5:78:76:$                    a4:35:10:74:6a:81:4a:b4:1e:d3:e5:0c:3e:d8:9c:$                    19:36:2a:16:07:03:ba:64:ae:3d:54:02:6a:e2:1e:$                    79:f6:5b:38:9f:01:f1:ea:e3:de:1d:f8:09:c7:86:$                    b1:c2:94:ad:76:f1:89:96:73:a7:60:72:9c:d7:44:$                    7c:55:2e:9c:ba:cc:a2:c3:a6:24:e8:a5:3a:63:73:$                    f8:a4:1a:84:5a:10:9a:63:b9:55:f5:8f:02:1c:e8:$                    05:20:f7:4f:69:66:3d:1b:10:4c:b3:6d:db:96:f3:$                    38:dc:28:7a:ab:dd:04:82:db:e7:e5:90:1b:b5:ee:$                    c2:0e:89:0f:e6:28:4b:ad:75:92:9f:fa:df:41:61:$                    90:b1:da:cb:4a:3d:ed:fb:89:40:ba:73:18:61:e4:$                    bb:89$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Subject Key Identifier: $                72:99:C1:DD:DD:26:E3:B0:1E:F4:09:F1:D0:25:C4:94:F2:15:72:B6$            X509v3 Authority Key Identifier: $                keyid:98:2B:25:3C:30:CA:2C:2B:56:E7:DB:FC:59:33:B3:DC:3D:5B:6A:D7$                DirName:/C=US/ST=California/L=Sunnyvale/O=Fortinet/OU=Certificate Authority/CN=fortinet-ca2/emailAddress=support@fortinet.com$                serial:20:01$$            X509v3 Basic Constraints: critical$                CA:FALSE$            X509v3 Key Usage: critical$                Digital Signature$    Signature Algorithm: sha256WithRSAEncryption$         ae:24:81:dd:ce:14:35:66:53:a5:9e:f1:6a:06:fe:96:1b:dd:$         cd:e1:84:2f:1a:e3:88:22:cc:5e:27:4e:81:52:94:3a:eb:bd:$         66:45:e7:d6:84:bb:83:32:f0:3b:61:41:e3:b0:fa:eb:da:54:$         c9:ee:eb:5a:cc:ec:f8:38:88:32:5e:8a:aa:b0:9c:eb:db:b3:$         bc:20:5d:8a:cc:e4:14:d5:05:2b:70:ed:3d:b7:2c:b2:4b:f6:$         ef:7c:fa:15:0b:fb:77:c2:49:84:8c:8e:91:12:01:3e:83:2c:$         80:17:97:88:76:94:5b:8d:b2:57:34:b5:d1:48:c4:5a:86:ae:$         bd:6d:ac:5e:1b:c5:61:89:88:85:91:44:99:0f:3b:85:78:eb:$         d4:dd:f2:aa:1b:48:ad:f3:92:f4:6b:ec:8b:e3:bd:ab:87:4a:$         a2:de:74:45:f6:df:b6:88:03:ca:eb:54:b7:3a:37:9a:24:d0:$         56:18:a6:6f:17:b5:9e:5e:f3:30:31:bd:36:50:c2:f1:ba:fb:$         ae:00:a3:2f:1c:11:6f:4b:b5:a6:92:d6:e2:bc:a0:fc:4e:7f:$         72:20:a6:98:fe:4d:0f:4e:4d:f4:a4:9a:f3:f7:3c:5a:28:3e:$         9d:df:9b:f0:03:54:59:f9:f7:1f:b5:43:cc:51:fe:dd:79:46:$         c9:a7:24:66$
+08/22/2024 09:03:23 [269453] realm is enabled: 
+08/22/2024 09:03:24 [269453] no Content-Length
+08/22/2024 09:03:24 [269453] try to get cookie for the first time: 115 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly; SameSite=Strict
+08/22/2024 09:03:24 [269453] no Content-Length
+08/22/2024 09:03:24 [269453] cookie: SVPNCOOKIE=gtBtskcFeZMLDUkBuZeMVzpYCHYmLmosrnJCusahuG3xTsIYbro2qnqnCS2l7hWFjfXuPEdpVlVZMgDhnY/EX5eqNH9zrO5OKLz5cV7hsmgLc9ULTLhRnn4Mz4uz7N59G2CguygFTfAKVieyIlXj/vntgVj3HK9zLbI0lYegXOTNoE5LnmMX3izww/1/SqYU1/0OcNXYcQOADPuJWFpFW3vS0iemqARI7sHnrME1GGKNE2KPSvp79oC+RQPBwcWO5HIVDT2Z95ptsY51/3o9OVD7V1cB4XonCb7ehQfho0Cal+WvLaKhHqyeHMBhIb2IWDcn0Gpj4BCw+w==
+08/22/2024 09:03:24 [269453] no Content-Length
+08/22/2024 09:03:25 [269453] no Content-Length
+08/22/2024 09:03:25 [269453] 0|"|À"Öaü|1||gtBtskcFeZMLDUkBuZeMVzpYCHYmLmosrnJCusahuG3xTsIYbro2qnqnCS2l7hWFjfXuPEdpVlVZMgDhnY/EX5eqNH9zrO5OKLz5cV7hsmgLc9ULTLhRnn4Mz4uz7N59G2CguygFTfAKVieyIlXj/vntgVj3HK9zLbI0lYegXOTNoE5LnmMX3izww/1/SqYU1/0OcNXYcQOADPuJWFpFW3vS0iemqARI7sHnrME1GGKNE2KPSvp79oC+RQPBwcWO5HIVDT2Z95ptsY51/3o9OVD7V1cB4XonCb7ehQfho0Cal+WvLaKhHqyeHMBhIb2IWDcn0Gpj4BCw+w==|0
+08/22/2024 09:03:25 [269450] ssl vpn tunnel started
+08/22/2024 09:03:25 [269450] rcv cmd:0 at state[1]
+08/22/2024 09:03:25 [269540] server="[vwys1.fortiddns.com] port=À"Öaü[10443] version=1 tunnel= cookie=gtBtskcFeZMLDUkBuZeMVzpYCHYmLmosrnJCusahuG3xTsIYbro2qnqnCS2l7hWFjfXuPEdpVlVZMgDhnY/EX5eqNH9zrO5OKLz5cV7hsmgLc9ULTLhRnn4Mz4uz7N59G2CguygFTfAKVieyIlXj/vntgVj3HK9zLbI0lYegXOTNoE5LnmMX3izww/1/SqYU1/0OcNXYcQOADPuJWFpFW3vS0iemqARI7sHnrME1GGKNE2KPSvp79oC+RQPBwcWO5HIVDT2Z95ptsY51/3o9OVD7V1cB4XonCb7ehQfho0Cal+WvLaKhHqyeHMBhIb2IWDcn0Gpj4BCw+w== exclusive routing: 0
+
+08/22/2024 09:03:25 [269540] starting pppd
+08/22/2024 09:03:25 [269540] use tty:/dev/pts/7
+08/22/2024 09:03:25 [269540] connecting to vwys1.fortiddns.com:10443
+08/22/2024 09:03:47 [271006] set the loglevel to 1
+08/22/2024 09:03:47 [271004] set the loglevel to 1
+08/22/2024 09:03:47 [271006] sslvpn connection version:4.0.2328
+08/22/2024 09:03:47 [271006] rcv cmd:0 at state[0]
+08/22/2024 09:03:47 [271006] starting ssl vpn tunnel[4.0.2328]
+08/22/2024 09:03:47 [271008] route backup START
+08/22/2024 09:03:47 [271008] route backup DONE
+08/22/2024 09:03:47 [271009] execl /home/cristopher/workspace/namchee/pw/./client/helper/get_fortisslvpn_info /home/cristopher/workspace/namchee/pw/./client/helper vwys1.fortiddns.com 10443   ...
+08/22/2024 09:03:47 [271009] trusted CA dir: /home/cristopher/.fctsslvpn_trustca
+08/22/2024 09:03:47 [271009] set loglevel to 1
+08/22/2024 09:03:48 [271009] Peer's certificate is not valid. action is 1
+08/22/2024 09:03:48 [271009] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number: 2379327 (0x244e3f)$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=fortinet-subca2001/emailAddress=support@fortinet.com$        Validity$            Not Before: Feb 23 02:07:56 2021 GMT$            Not After : Jan 19 03:14:07 2056 GMT$        Subject: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=FortiGate, CN=FG200FT921905275/emailAddress=support@fortinet.com$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (2048 bit)$                Modulus:$                    00:dd:f5:2a:48:2b:1b:5a:96:d4:4f:ea:e9:be:52:$                    3c:86:4e:6c:7c:b5:76:97:c4:42:05:22:1f:92:a1:$                    97:b5:c9:a3:b6:f6:00:b7:f4:c5:de:53:70:57:1c:$                    8e:2d:f4:95:8f:a4:7b:2b:30:7a:14:28:3d:0c:4d:$                    21:e4:d0:7e:d8:54:f0:bf:cd:0b:95:8d:39:5c:a2:$                    32:d1:32:72:3d:cd:45:71:b4:cd:f7:13:c8:88:3b:$                    98:5d:f2:89:23:ba:02:8e:e0:d3:8d:1d:a5:78:76:$                    a4:35:10:74:6a:81:4a:b4:1e:d3:e5:0c:3e:d8:9c:$                    19:36:2a:16:07:03:ba:64:ae:3d:54:02:6a:e2:1e:$                    79:f6:5b:38:9f:01:f1:ea:e3:de:1d:f8:09:c7:86:$                    b1:c2:94:ad:76:f1:89:96:73:a7:60:72:9c:d7:44:$                    7c:55:2e:9c:ba:cc:a2:c3:a6:24:e8:a5:3a:63:73:$                    f8:a4:1a:84:5a:10:9a:63:b9:55:f5:8f:02:1c:e8:$                    05:20:f7:4f:69:66:3d:1b:10:4c:b3:6d:db:96:f3:$                    38:dc:28:7a:ab:dd:04:82:db:e7:e5:90:1b:b5:ee:$                    c2:0e:89:0f:e6:28:4b:ad:75:92:9f:fa:df:41:61:$                    90:b1:da:cb:4a:3d:ed:fb:89:40:ba:73:18:61:e4:$                    bb:89$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Subject Key Identifier: $                72:99:C1:DD:DD:26:E3:B0:1E:F4:09:F1:D0:25:C4:94:F2:15:72:B6$            X509v3 Authority Key Identifier: $                keyid:98:2B:25:3C:30:CA:2C:2B:56:E7:DB:FC:59:33:B3:DC:3D:5B:6A:D7$                DirName:/C=US/ST=California/L=Sunnyvale/O=Fortinet/OU=Certificate Authority/CN=fortinet-ca2/emailAddress=support@fortinet.com$                serial:20:01$$            X509v3 Basic Constraints: critical$                CA:FALSE$            X509v3 Key Usage: critical$                Digital Signature$    Signature Algorithm: sha256WithRSAEncryption$         ae:24:81:dd:ce:14:35:66:53:a5:9e:f1:6a:06:fe:96:1b:dd:$         cd:e1:84:2f:1a:e3:88:22:cc:5e:27:4e:81:52:94:3a:eb:bd:$         66:45:e7:d6:84:bb:83:32:f0:3b:61:41:e3:b0:fa:eb:da:54:$         c9:ee:eb:5a:cc:ec:f8:38:88:32:5e:8a:aa:b0:9c:eb:db:b3:$         bc:20:5d:8a:cc:e4:14:d5:05:2b:70:ed:3d:b7:2c:b2:4b:f6:$         ef:7c:fa:15:0b:fb:77:c2:49:84:8c:8e:91:12:01:3e:83:2c:$         80:17:97:88:76:94:5b:8d:b2:57:34:b5:d1:48:c4:5a:86:ae:$         bd:6d:ac:5e:1b:c5:61:89:88:85:91:44:99:0f:3b:85:78:eb:$         d4:dd:f2:aa:1b:48:ad:f3:92:f4:6b:ec:8b:e3:bd:ab:87:4a:$         a2:de:74:45:f6:df:b6:88:03:ca:eb:54:b7:3a:37:9a:24:d0:$         56:18:a6:6f:17:b5:9e:5e:f3:30:31:bd:36:50:c2:f1:ba:fb:$         ae:00:a3:2f:1c:11:6f:4b:b5:a6:92:d6:e2:bc:a0:fc:4e:7f:$         72:20:a6:98:fe:4d:0f:4e:4d:f4:a4:9a:f3:f7:3c:5a:28:3e:$         9d:df:9b:f0:03:54:59:f9:f7:1f:b5:43:cc:51:fe:dd:79:46:$         c9:a7:24:66$
+08/22/2024 09:03:48 [271009] realm is enabled: 
+08/22/2024 09:03:48 [271009] no Content-Length
+08/22/2024 09:03:48 [271009] try to get cookie for the first time: 115 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly; SameSite=Strict
+08/22/2024 09:03:49 [271009] no Content-Length
+08/22/2024 09:03:49 [271009] cookie: SVPNCOOKIE=hGxu8552nR/mXiAOTHifD+u5SmQg1LsrJMmjAADxeaIh1mPSxqdiiymmH0oWQ1OM1qx2LchyXy3Hr5+cAx3iiuRmAWKURWZTDwgvK7Ja56412AOlUWd8+NRz+rBlq+Z60qi53mtSrVGIykzIl2ux4XLf1fvXmNBXUje2DPKYx+0fhkuEnX55ogYwHQ5wfI691yG7tQ+d4005tH5o9eo0853SO0VGmlE3OROeskKAR+Z6d7HSppivBE46M4rAtkblZBQf5GwgST4Uxk4lYyArlPK+jf8sjSMZneTWyPmYUfhE6aPdLmHytuErbVQVRG9nCodbtULfjBEC/mo=
+08/22/2024 09:03:49 [271009] no Content-Length
+08/22/2024 09:03:49 [271009] no Content-Length
+08/22/2024 09:03:49 [271009] 0|"|Ðµþ|1||hGxu8552nR/mXiAOTHifD+u5SmQg1LsrJMmjAADxeaIh1mPSxqdiiymmH0oWQ1OM1qx2LchyXy3Hr5+cAx3iiuRmAWKURWZTDwgvK7Ja56412AOlUWd8+NRz+rBlq+Z60qi53mtSrVGIykzIl2ux4XLf1fvXmNBXUje2DPKYx+0fhkuEnX55ogYwHQ5wfI691yG7tQ+d4005tH5o9eo0853SO0VGmlE3OROeskKAR+Z6d7HSppivBE46M4rAtkblZBQf5GwgST4Uxk4lYyArlPK+jf8sjSMZneTWyPmYUfhE6aPdLmHytuErbVQVRG9nCodbtULfjBEC/mo=|0
+08/22/2024 09:03:49 [271006] ssl vpn tunnel started
+08/22/2024 09:03:49 [271006] rcv cmd:0 at state[1]
+08/22/2024 09:03:49 [271061] server="[vwys1.fortiddns.com] port=Ðµþ[10443] version=1 tunnel= cookie=hGxu8552nR/mXiAOTHifD+u5SmQg1LsrJMmjAADxeaIh1mPSxqdiiymmH0oWQ1OM1qx2LchyXy3Hr5+cAx3iiuRmAWKURWZTDwgvK7Ja56412AOlUWd8+NRz+rBlq+Z60qi53mtSrVGIykzIl2ux4XLf1fvXmNBXUje2DPKYx+0fhkuEnX55ogYwHQ5wfI691yG7tQ+d4005tH5o9eo0853SO0VGmlE3OROeskKAR+Z6d7HSppivBE46M4rAtkblZBQf5GwgST4Uxk4lYyArlPK+jf8sjSMZneTWyPmYUfhE6aPdLmHytuErbVQVRG9nCodbtULfjBEC/mo= exclusive routing: 0
+
+08/22/2024 09:03:49 [271061] starting pppd
+08/22/2024 09:03:49 [271061] use tty:/dev/pts/7
+08/22/2024 09:03:49 [271061] connecting to vwys1.fortiddns.com:10443
+08/22/2024 09:03:51 [271061] [xml config]: GET /remote/fortisslvpn_xml ... (received 1138 bytes): 
+HTTP/1.1 200 OK
+Date: Thu, 22 Aug 2024 02:03:51 GMT
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'; object-src 'self'; script-src 'self' https:  'unsafe-eval' 'unsafe-inline' blob:;
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><tunnel-method value='websocket' /><auth-ses check-src-ip='1' tun-connect-without-reauth='0' tun-user-ses-timeout='30' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><dns ip='192.168.10.1' /><dns ip='192.168.10.2' /><assigned-addr ipv4='10.212.134.10' /><split-tunnel-info><addr ip='192.168.10.29' mask='255.255.255.255' /><addr ip='192.168.61.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='900' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+08/22/2024 09:03:52 [271061] Got local address from ppp, interface will be  up
+08/22/2024 09:04:18 [271061] pppd may die...trying to fix it
+08/22/2024 09:04:51 [271061] ppp interface is not up!!!
+08/22/2024 09:05:30 [271061] pppd may die...trying to fix it
+08/22/2024 09:05:30 [271061] pppd may die...trying to fix it
+08/22/2024 09:05:30 [271061] pppd may die...trying to fix it
+08/22/2024 09:06:49 [271061] killing pppd ...
+08/22/2024 09:06:49 [271006] kill_child:271061
+08/22/2024 09:06:49 [271009] signal rcved, logout now
+08/22/2024 09:06:49 [271061] kill_child:271063
+08/22/2024 09:06:49 [271006] kill_child:271009
+08/22/2024 09:07:04 [278581] set the loglevel to 1
+08/22/2024 09:07:04 [278031] set the loglevel to 1
+08/22/2024 09:07:04 [278581] sslvpn connection version:4.0.2328
+08/22/2024 09:07:04 [278581] rcv cmd:0 at state[0]
+08/22/2024 09:07:04 [278581] starting ssl vpn tunnel[4.0.2328]
+08/22/2024 09:07:04 [278583] route backup START
+08/22/2024 09:07:04 [278583] route backup DONE
+08/22/2024 09:07:04 [278584] execl /home/cristopher/workspace/namchee/pw/./client/helper/get_fortisslvpn_info /home/cristopher/workspace/namchee/pw/./client/helper vwys1.fortiddns.com 10443   ...
+08/22/2024 09:07:04 [278584] trusted CA dir: /home/cristopher/.fctsslvpn_trustca
+08/22/2024 09:07:04 [278584] set loglevel to 1
+08/22/2024 09:07:06 [278584] Peer's certificate is not valid. action is 1
+08/22/2024 09:07:06 [278584] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number: 2379327 (0x244e3f)$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=Certificate Authority, CN=fortinet-subca2001/emailAddress=support@fortinet.com$        Validity$            Not Before: Feb 23 02:07:56 2021 GMT$            Not After : Jan 19 03:14:07 2056 GMT$        Subject: C=US, ST=California, L=Sunnyvale, O=Fortinet, OU=FortiGate, CN=FG200FT921905275/emailAddress=support@fortinet.com$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (2048 bit)$                Modulus:$                    00:dd:f5:2a:48:2b:1b:5a:96:d4:4f:ea:e9:be:52:$                    3c:86:4e:6c:7c:b5:76:97:c4:42:05:22:1f:92:a1:$                    97:b5:c9:a3:b6:f6:00:b7:f4:c5:de:53:70:57:1c:$                    8e:2d:f4:95:8f:a4:7b:2b:30:7a:14:28:3d:0c:4d:$                    21:e4:d0:7e:d8:54:f0:bf:cd:0b:95:8d:39:5c:a2:$                    32:d1:32:72:3d:cd:45:71:b4:cd:f7:13:c8:88:3b:$                    98:5d:f2:89:23:ba:02:8e:e0:d3:8d:1d:a5:78:76:$                    a4:35:10:74:6a:81:4a:b4:1e:d3:e5:0c:3e:d8:9c:$                    19:36:2a:16:07:03:ba:64:ae:3d:54:02:6a:e2:1e:$                    79:f6:5b:38:9f:01:f1:ea:e3:de:1d:f8:09:c7:86:$                    b1:c2:94:ad:76:f1:89:96:73:a7:60:72:9c:d7:44:$                    7c:55:2e:9c:ba:cc:a2:c3:a6:24:e8:a5:3a:63:73:$                    f8:a4:1a:84:5a:10:9a:63:b9:55:f5:8f:02:1c:e8:$                    05:20:f7:4f:69:66:3d:1b:10:4c:b3:6d:db:96:f3:$                    38:dc:28:7a:ab:dd:04:82:db:e7:e5:90:1b:b5:ee:$                    c2:0e:89:0f:e6:28:4b:ad:75:92:9f:fa:df:41:61:$                    90:b1:da:cb:4a:3d:ed:fb:89:40:ba:73:18:61:e4:$                    bb:89$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Subject Key Identifier: $                72:99:C1:DD:DD:26:E3:B0:1E:F4:09:F1:D0:25:C4:94:F2:15:72:B6$            X509v3 Authority Key Identifier: $                keyid:98:2B:25:3C:30:CA:2C:2B:56:E7:DB:FC:59:33:B3:DC:3D:5B:6A:D7$                DirName:/C=US/ST=California/L=Sunnyvale/O=Fortinet/OU=Certificate Authority/CN=fortinet-ca2/emailAddress=support@fortinet.com$                serial:20:01$$            X509v3 Basic Constraints: critical$                CA:FALSE$            X509v3 Key Usage: critical$                Digital Signature$    Signature Algorithm: sha256WithRSAEncryption$         ae:24:81:dd:ce:14:35:66:53:a5:9e:f1:6a:06:fe:96:1b:dd:$         cd:e1:84:2f:1a:e3:88:22:cc:5e:27:4e:81:52:94:3a:eb:bd:$         66:45:e7:d6:84:bb:83:32:f0:3b:61:41:e3:b0:fa:eb:da:54:$         c9:ee:eb:5a:cc:ec:f8:38:88:32:5e:8a:aa:b0:9c:eb:db:b3:$         bc:20:5d:8a:cc:e4:14:d5:05:2b:70:ed:3d:b7:2c:b2:4b:f6:$         ef:7c:fa:15:0b:fb:77:c2:49:84:8c:8e:91:12:01:3e:83:2c:$         80:17:97:88:76:94:5b:8d:b2:57:34:b5:d1:48:c4:5a:86:ae:$         bd:6d:ac:5e:1b:c5:61:89:88:85:91:44:99:0f:3b:85:78:eb:$         d4:dd:f2:aa:1b:48:ad:f3:92:f4:6b:ec:8b:e3:bd:ab:87:4a:$         a2:de:74:45:f6:df:b6:88:03:ca:eb:54:b7:3a:37:9a:24:d0:$         56:18:a6:6f:17:b5:9e:5e:f3:30:31:bd:36:50:c2:f1:ba:fb:$         ae:00:a3:2f:1c:11:6f:4b:b5:a6:92:d6:e2:bc:a0:fc:4e:7f:$         72:20:a6:98:fe:4d:0f:4e:4d:f4:a4:9a:f3:f7:3c:5a:28:3e:$         9d:df:9b:f0:03:54:59:f9:f7:1f:b5:43:cc:51:fe:dd:79:46:$         c9:a7:24:66$
+08/22/2024 09:07:07 [278584] realm is enabled: 
+08/22/2024 09:07:11 [278584] no Content-Length
+08/22/2024 09:07:11 [278584] try to get cookie for the first time: 115 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly; SameSite=Strict
+08/22/2024 09:07:12 [278584] no Content-Length
+08/22/2024 09:07:12 [278584] cookie: SVPNCOOKIE=XX+kTG/YWMr3fFczMZi8GwRbAT6+omCrGEkeDUNpkJ/ma+9dqLbrs4sHWzMYA+Dw0LlephnXTS8EHAdwwEIsfi+BXSDaKgKwBlqLckHNzo9pSo+Nlcb2Wey6O/bK15VezFk1D/XvjkmtZGux1OR1BT1EeguzYS/34wd8esFfKxroryu5Ileo7swGSMAN1jQ7oB+VjnbRTQQK9zYrqjJ1v7Am3xH/JA/qOv7QiBscui3yItKygGlFFShLXxszr4L3MiZre9JawK+hhaaAD4p1PXY/Bi0+DxKAMVDPLaO8mlmaWRIvTumVHPz+KSZv5fAqDerHHLkRIw==
+08/22/2024 09:07:13 [278584] no Content-Length
+08/22/2024 09:07:13 [278584] no Content-Length
+08/22/2024 09:07:13 [278584] 0|"| ‰gÿ|1||XX+kTG/YWMr3fFczMZi8GwRbAT6+omCrGEkeDUNpkJ/ma+9dqLbrs4sHWzMYA+Dw0LlephnXTS8EHAdwwEIsfi+BXSDaKgKwBlqLckHNzo9pSo+Nlcb2Wey6O/bK15VezFk1D/XvjkmtZGux1OR1BT1EeguzYS/34wd8esFfKxroryu5Ileo7swGSMAN1jQ7oB+VjnbRTQQK9zYrqjJ1v7Am3xH/JA/qOv7QiBscui3yItKygGlFFShLXxszr4L3MiZre9JawK+hhaaAD4p1PXY/Bi0+DxKAMVDPLaO8mlmaWRIvTumVHPz+KSZv5fAqDerHHLkRIw==|0
+08/22/2024 09:07:13 [278581] ssl vpn tunnel started
+08/22/2024 09:07:13 [278581] rcv cmd:0 at state[1]
+08/22/2024 09:07:13 [278933] server="[vwys1.fortiddns.com] port= ‰gÿ[10443] version=1 tunnel= cookie=XX+kTG/YWMr3fFczMZi8GwRbAT6+omCrGEkeDUNpkJ/ma+9dqLbrs4sHWzMYA+Dw0LlephnXTS8EHAdwwEIsfi+BXSDaKgKwBlqLckHNzo9pSo+Nlcb2Wey6O/bK15VezFk1D/XvjkmtZGux1OR1BT1EeguzYS/34wd8esFfKxroryu5Ileo7swGSMAN1jQ7oB+VjnbRTQQK9zYrqjJ1v7Am3xH/JA/qOv7QiBscui3yItKygGlFFShLXxszr4L3MiZre9JawK+hhaaAD4p1PXY/Bi0+DxKAMVDPLaO8mlmaWRIvTumVHPz+KSZv5fAqDerHHLkRIw== exclusive routing: 0
+
+08/22/2024 09:07:13 [278933] starting pppd
+08/22/2024 09:07:13 [278933] use tty:/dev/pts/7
+08/22/2024 09:07:13 [278933] connecting to vwys1.fortiddns.com:10443
+08/22/2024 09:07:17 [278933] [xml config]: GET /remote/fortisslvpn_xml ... (received 1138 bytes): 
+HTTP/1.1 200 OK
+Date: Thu, 22 Aug 2024 02:07:16 GMT
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'; object-src 'self'; script-src 'self' https:  'unsafe-eval' 'unsafe-inline' blob:;
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><tunnel-method value='websocket' /><auth-ses check-src-ip='1' tun-connect-without-reauth='0' tun-user-ses-timeout='30' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><dns ip='192.168.10.1' /><dns ip='192.168.10.2' /><assigned-addr ipv4='10.212.134.11' /><split-tunnel-info><addr ip='192.168.10.29' mask='255.255.255.255' /><addr ip='192.168.61.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='900' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+08/22/2024 09:07:22 [278933] Got local address from ppp, interface will be  up
+08/22/2024 09:08:17 [278933] ppp interface is not up!!!
+08/22/2024 09:08:30 [278933] killing pppd ...
+08/22/2024 09:08:30 [278581] kill_child:278933
+08/22/2024 09:08:30 [278584] signal rcved, logout now
+08/22/2024 09:08:30 [278933] kill_child:278935
+08/22/2024 09:08:30 [278581] kill_child:278584
