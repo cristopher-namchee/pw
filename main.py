@@ -75,13 +75,14 @@ process = connect_forticlient_vpn(
     os.getenv("VPN_PASSWORD"),
 )
 
-time.sleep(30)
+time.sleep(45)
 
 if process and process.isalive():
     ssh.connect(
         hostname=os.getenv("SSH_HOST"),
         username=os.getenv("SSH_USER"),
         password=os.getenv("SSH_PASSWORD"),
+        timeout=
     )
 
     stdin, stdout, stderr = ssh.exec_command("~/dpo_logs/count_queue.sh")
@@ -106,3 +107,5 @@ if process and process.isalive():
     if ssh is not None:
         ssh.close()
         del ssh, stdin, stdout, stderr
+else:
+    print(process.isalive())
