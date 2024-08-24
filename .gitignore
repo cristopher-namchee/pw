@@ -3,3 +3,5 @@ env
 
 ssh.log
 auth.txt
+
+client/**/*.log */
