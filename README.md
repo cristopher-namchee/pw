@@ -4,6 +4,14 @@
 
 1. FortiClient SSL VPN CLI
 
+## Installation
+
+1. Clone the repository
+2. Create a new virtual environment by running `python -m venv env` and activate it `source env/bin/activate`
+3. Install all required dependencies by running `pip install -r requirements.txt`
+4. [Install FortiClient](#installing-forticlient)
+5. Launch the application by running `python main.py`
+
 ## Installing FortiClient
 
 1. Download the latest FortiClient SSL VPN CLI
@@ -39,17 +47,5 @@ sudo ./setup.linux.sh
 > [!NOTE]
 > You will be asked about licensing here. Just press `Yes` without reading like you usually do :)
 
-6. Navigate to the parent folder
-
-```bash
-cd ..
-```
-
-7. Copy the CLI to your `bin` folder and you're good to go
-
-```bash
-sudo cp forticlientsslvpn_cli /bin
-```
-
 > [!NOTE]
-> You can test the client installation using `forticlientsslvpn_cli --server serveraddress:port --vpnuser username`
+> You can test the client installation using `./client/forticlientsslvpn_cli --server serveraddress:port --vpnuser username`
