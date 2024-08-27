@@ -19,8 +19,9 @@ A simple Python script to collect metrics from Vowel's server
 1. Clone the repository
 2. Create a new virtual environment by running `python -m venv env` and activate it `source env/bin/activate`
 3. Install all required dependencies by running `pip install -r requirements.txt`
-4. [Install openfortivpn](#installing-openfortivpn)
-5. Launch the application by running `sudo python main.py`
+4. Create a new `.env` in the root folder of the project using examples from `.env.example`
+5. [Install openfortivpn](#installing-openfortivpn)
+6. Launch the application by running `sudo python main.py`
 
 ## Installing `openfortivpn`
 
