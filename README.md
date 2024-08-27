@@ -1,51 +1,46 @@
 # Vowel Reporter Script
 
+A simple Python script to collect metrics from Vowel's server
+
 ## Requirements
 
-1. FortiClient SSL VPN CLI
+1. Python 3.10+
+2. `openfortivpn`   
+
+## Roadmap
+
+- [x] Working SSH Client
+- [x] Working VPN Client
+- [ ] Comparison with previous day with Redis
+- [ ] Slack Integration
 
 ## Installation
 
 1. Clone the repository
 2. Create a new virtual environment by running `python -m venv env` and activate it `source env/bin/activate`
 3. Install all required dependencies by running `pip install -r requirements.txt`
-4. [Install FortiClient](#installing-forticlient)
-5. Launch the application by running `python main.py`
+4. [Install openfortivpn](#installing-openfortivpn)
+5. Launch the application by running `sudo python main.py`
 
-## Installing FortiClient
-
-1. Download the latest FortiClient SSL VPN CLI
+## Installing `openfortivpn`
 
 ```bash
-wget http://cdn.software-mirrors.com/forticlientsslvpn_linux_4.4.2328.tar.gz
+# For Linux users
+sudo apt install openfortivpn
+
+# For Mac users
+brew install openfortivpn
+
+# For Windows users
+# TBD
 ```
 
-2. Extract the content of package
+## FAQ
 
-```bash
-tar -xzvf forticlientsslvpn_linux_4.4.2328.tar.gz
-```
+1. Why do we need `sudo`?
 
-3. (Optional) Install `ppp` to build the SSL Client
+`openfortivpn` needs a [privileged access](https://github.com/adrienverge/openfortivpn?tab=readme-ov-file#running-as-root)
 
-```bash
-sudo apt-get install ppp
-```
+2. I can't connect to the VPN due to certificate issue!
 
-4. Go to the installer setup directory
-
-```bash
-cd ./forticlientsslvpn/64bit/helper
-```
-
-5. Run the setup file 
-
-```bash
-sudo ./setup.linux.sh
-```
-
-> [!NOTE]
-> You will be asked about licensing here. Just press `Yes` without reading like you usually do :)
-
-> [!NOTE]
-> You can test the client installation using `./client/forticlientsslvpn_cli --server serveraddress:port --vpnuser username`
+Try to run `sudo openfortivpn <server>:<port> --username <username>` and connect it through `openfortivpn`. If there's an error, copy the `trusted-cert` hash code to your environment.
