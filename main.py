@@ -41,7 +41,6 @@ try:
         os.getenv("SSH_HOST"),
         os.getenv("SSH_USER"),
         os.getenv("SSH_PASSWORD"),
-        os.getenv("SSH_PORT"),
     )
 
     vpn_client = VPNConnection(
