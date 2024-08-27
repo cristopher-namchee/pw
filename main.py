@@ -1,41 +1,12 @@
 import os
-import re
-import sys
-import time
-
-import pexpect
-import paramiko
 
 from dotenv import load_dotenv
 
+from commands import SSHCommand
+from ssh import SSHConnection
+from vpn import VPNConnection
+
 load_dotenv()
-
-
-def connect_forticlient_vpn(vpn_host, vpn_port, vpn_username, vpn_password):
-    command = f"./client/forticlientsslvpn_cli --server {vpn_host}:{vpn_port} --vpnuser {vpn_username}"
-    print(command)
-
-    vpn = pexpect.spawn(command)
-    vpn.logfile = sys.stdout.buffer
-
-    vpn.expect("Password for VPN:")
-    vpn.sendline(vpn_password)
-
-    vpn.expect(
-        re.compile(
-            r"Would you like to connect to this server\? \(Y/N\)", re.IGNORECASE
-        ),
-    )
-    vpn.sendline("Y")
-
-    vpn.expect("Press Ctrl-C to quit")
-
-    if vpn.isalive():
-        print("VPN connected successfully.")
-    else:
-        print("Failed to establish the VPN connection.")
-
-    return vpn
 
 
 def format_sql_table(data: str) -> str:
@@ -65,48 +36,39 @@ def format_sql_table(data: str) -> str:
     return "\n".join(table)
 
 
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
-process = connect_forticlient_vpn(
-    os.getenv("VPN_HOST"),
-    os.getenv("VPN_PORT"),
-    os.getenv("VPN_USER"),
-    os.getenv("VPN_PASSWORD"),
-)
-
-time.sleep(30)
-
-if process and process.isalive():
-    print("Connecting to server via SSH...")
-
-    ssh.connect(
-        hostname=os.getenv("SSH_HOST"),
-        username=os.getenv("SSH_USER"),
-        password=os.getenv("SSH_PASSWORD"),
+try:
+    ssh_client = SSHConnection(
+        os.getenv("SSH_HOST"),
+        os.getenv("SSH_USER"),
+        os.getenv("SSH_PASSWORD"),
+        os.getenv("SSH_PORT"),
     )
 
-    stdin, stdout, stderr = ssh.exec_command("~/dpo_logs/count_queue.sh")
-    stdout.channel.set_combine_stderr(True)
-    queue = stdout.read().decode()
-
-    stdin, stdout, stderr = ssh.exec_command("df -h")
-    stdout.channel.set_combine_stderr(True)
-    disk = stdout.read().decode()
-
-    stdin, stdout, stderr = ssh.exec_command(
-        "docker exec datasaur-mariadb bash -c 'mysql -h$DATABASE_HOST -u$DATABASE_USERNAME -p$DATABASE_PASSWORD -e \"use datasaur; select status, count(*) from llm_vector_store_document WHERE llmVectorStoreId=9 GROUP BY status;\"'",
-        get_pty=True,
+    vpn_client = VPNConnection(
+        os.getenv("VPN_HOST"),
+        os.getenv("VPN_PORT"),
+        os.getenv("VPN_USER"),
+        os.getenv("VPN_PASSWORD"),
+        os.getenv("VPN_CERT"),
     )
-    stdout.channel.set_combine_stderr(True)
-    document_count = stdout.read().decode()
+    vpn_client.connect()
 
-    print(queue)
-    print(disk)
-    print(format_sql_table(document_count))
+    if vpn_client.is_connected():
+        print("Connecting to server via SSH...")
 
-    if ssh is not None:
-        ssh.close()
-        del ssh, stdin, stdout, stderr
-else:
-    print(process.isalive())
+        ssh_client.connect()
+        queue = ssh_client.exec(SSHCommand.QUEUE_COUNT)
+        disk = ssh_client.exec(SSHCommand.DISK_USAGE)
+        document_count = ssh_client.exec(SSHCommand.DOCUMENT_COUNT)
+
+        print(queue)
+        print(disk)
+        print(format_sql_table(document_count))
+except Exception as e:
+    print(e)
+finally:
+    if ssh_client.is_connected():
+        ssh_client.disconnect()
+
+    if vpn_client.is_connected():
+        vpn_client.disconnect()
