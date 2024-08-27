@@ -5,3 +5,5 @@ ssh.log
 auth.txt
 
 client/**/*.log */
+
+__pycache__
