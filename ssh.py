@@ -48,11 +48,30 @@ class SSHConnection:
             raise Exception("SSH is not connected!")
 
         _, stdout, _ = self.client.exec_command(command)
-        stdout.channel.set_combine_stderr(True)
 
         return stdout.read().decode()
 
-    def is_connected(self) -> bool:
+    def exec_sudo(self, command: str) -> str:
+        """Execute a command on the server with `sudo`
+
+        Args:
+            command (str): Command to execute
+
+        Returns:
+            str: Command output
+        """
+        if not self.alive:
+            raise Exception("SSH is not connected!")
+
+        stdin, stdout, _ = self.client.exec_command(f"sudo -S {command}")
+        print(stdout.read().decode("utf-8"))
+
+        stdin.write(f"{self.password}\n")
+        stdin.flush()
+
+        return stdout.read().decode("utf-8")
+
+    def is_connected(self) -> str:
         """Check SSH connection status
 
         Returns:
