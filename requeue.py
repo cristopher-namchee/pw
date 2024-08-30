@@ -37,28 +37,29 @@ try:
 
         ssh_client.connect()
 
+        print("SSH connected..")
+
+        src_folder = f"/var/lib/docker/volumes/von-bot-datasaur_document-processor_backup_{args.src}/_data/queue_downloader"
+        dest_folder = f"/var/lib/docker/volumes/von-bot-datasaur_document-processor_backup_{args.dest}/_data/queue_downloader/"
+
         file_list = ssh_client.exec_sudo(
-            SSHCommand.LIST_QUEUE.format(source=args.src)
+            SSHCommand.LIST_QUEUE.format(source=src_folder)
         ).splitlines()
         file_list.sort()
 
-        print(file_list)
         count_to_move = args.count if args.count else len(file_list) // 2
         if count_to_move > len(file_list):
             raise Exception(
                 f"The number of files to be moved '{count_to_move}' cannot exceed the number of files on the queue '{len(file_list)}'"
             )
 
-        files_to_be_moved = " ".join(file_list[-count_to_move:])
-
-        print(
-            f"mv {files_to_be_moved} /var/lib/docker/volumes/von-bot-datasaur_document-processor_backup_{args.dest}/_data/queue_downloader/"
-        )
+        files_to_be_moved = file_list[-count_to_move:]
+        files_to_be_moved = map(lambda file: src_folder + '/' + file, files_to_be_moved)
+        files_to_be_moved = " ".join(files_to_be_moved)
 
         output = ssh_client.exec_sudo(
-            f"mv {files_to_be_moved} /var/lib/docker/volumes/von-bot-datasaur_document-processor_backup_{args.dest}/_data/queue_downloader/"
+            SSHCommand.MOVE_QUEUE.format(dest=dest_folder, files=files_to_be_moved)
         )
-        print(output)
 
         queue = ssh_client.exec(SSHCommand.QUEUE_COUNT)
 

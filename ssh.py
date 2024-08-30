@@ -64,7 +64,6 @@ class SSHConnection:
             raise Exception("SSH is not connected!")
 
         stdin, stdout, _ = self.client.exec_command(f"sudo -S {command}")
-        print(stdout.read().decode("utf-8"))
 
         stdin.write(f"{self.password}\n")
         stdin.flush()

@@ -8,4 +8,5 @@ class SSHCommand:
         " llm_vector_store_document WHERE llmVectorStoreId=9 GROUP BY status;\"'"
     )
 
-    LIST_QUEUE = "ls /var/lib/docker/volumes/von-bot-datasaur_document-processor_backup_{source}/_data/queue_downloader"
+    LIST_QUEUE = "ls {source}"
+    MOVE_QUEUE = "mv {files} {dest}"
