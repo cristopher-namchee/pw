@@ -32,9 +32,6 @@ sudo apt install openfortivpn
 
 # For Mac users
 brew install openfortivpn
-
-# For Windows users
-# TBD
 ```
 
 ## Usage
@@ -70,3 +67,7 @@ sudo python3 requeue.py <source> <destination> [-c, --count <count>]
 2. I can't connect to the VPN due to certificate issue!
 
 Try to run `sudo openfortivpn <server>:<port> --username <username>` and connect it through `openfortivpn`. If there's an error, copy the `trusted-cert` hash code to your environment.
+
+3. Can I use this CLI on Windows?
+
+Unfortunately no since `openfortivpn` doesn't have a Windows build. However, you can still run this script inside a WSL.
