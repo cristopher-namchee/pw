@@ -1,6 +1,7 @@
 bcrypt==4.2.0
 cffi==1.17.0
 cryptography==43.0.0
+halo==0.0.31
 paramiko==3.4.1
 ptyprocess==0.7.0
 pycparser==2.22
