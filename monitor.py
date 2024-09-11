@@ -13,7 +13,7 @@ load_dotenv()
 
 try:
     start = time.time()
-    spinner = Halo(text="Initalizing clients...", spinner="circleHalves")
+    spinner = Halo(text="Initalizing clients...")
     spinner.start()
 
     ssh_client = SSHConnection(
@@ -43,6 +43,8 @@ try:
         queue = ssh_client.exec(SSHCommand.QUEUE_COUNT)
         disk = ssh_client.exec(SSHCommand.DISK_USAGE)
         document_count = ssh_client.exec(SSHCommand.DOCUMENT_COUNT)
+
+        spinner.text = "Formatting data..."
 
         print("\n")
 
